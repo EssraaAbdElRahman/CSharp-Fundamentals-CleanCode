@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>CSharp_Fundamentals_CleanCode</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Tasks\Loops\" />
+    <Folder Include="Tasks\Arrays\" />
+    <Folder Include="Tasks\Strings\" />
+  </ItemGroup>
+
+</Project>
