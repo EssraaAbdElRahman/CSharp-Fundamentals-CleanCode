@@ -1,20 +1,62 @@
-# CSharp Fundamentals Clean Code
+# C# Fundamentals – Clean Code & OOP Practice
 
-This project is part of my learning journey in C# focusing on:
+A structured learning project designed to help developers understand C# fundamentals through **clean, organized, and scalable code**.
 
-- Clean Code principles
-- OOP design
-- Basic Design Patterns (in progress)
-- SOLID principles (in progress)
+---
 
-## Current Status
-- Implemented basic Task system
-- Even/Odd Task with dependency injection
-- Console-based architecture
+## 🎯 Purpose
 
-## Goal
-To evolve this project into a clean, scalable architecture using:
-- Factory Pattern
-- Menu System
-- SOLID principles
-- Design Patterns
+This project is not just about solving problems —  
+it's about learning **how to think like a software engineer**.
+
+It focuses on:
+- Writing clean and readable code
+- Structuring logic using OOP principles
+- Applying basic design concepts in real scenarios
+- Building a strong foundation for backend development
+
+---
+
+## 🧠 What You'll Learn
+
+### 🔹 Fundamentals
+- Conditions & Control Flow
+- Loops
+- Basic Problem Solving
+
+### 🔹 Object-Oriented Programming (OOP)
+- Classes & Objects
+- Interfaces
+- Constructor Injection
+- Encapsulation
+
+### 🔹 Clean Code Practices
+- Meaningful naming
+- Separation of concerns
+- Reusable components
+- Organized project structure
+
+### 🔹 Architecture Thinking (Beginner → Intermediate)
+- Modular design
+- Task-based architecture
+- Decoupling logic from input/output
+
+---
+
+## 🧱 Project Structure
+
+```bash
+/Core
+    ITask.cs
+
+/Services
+    InputService.cs
+    OutputService.cs
+
+/Tasks
+    /Basics
+    /Loops
+    /Arrays
+    /Strings
+
+Program.cs
