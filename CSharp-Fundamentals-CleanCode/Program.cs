@@ -7,4 +7,6 @@ var output = new OutputService();
 
 ITask task = new EvenOddTask(input, output);
 
+
 task.Execute();
+ 
