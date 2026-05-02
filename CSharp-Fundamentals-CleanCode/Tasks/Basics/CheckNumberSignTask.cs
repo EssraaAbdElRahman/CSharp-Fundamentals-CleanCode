@@ -29,8 +29,6 @@ namespace CSharp_Fundamentals_CleanCode.Tasks.Basics
                 var answer = _input.ReadString().Trim();
                 tryAgain = answer.Equals("y", StringComparison.OrdinalIgnoreCase);
 
-            } while (tryAgain);
-        }
         private string GetSign(int number)
         {
             if (number < 0) return "Negative";
