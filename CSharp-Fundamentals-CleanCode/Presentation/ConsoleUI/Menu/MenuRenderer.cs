@@ -1,13 +1,16 @@
-﻿using CSharp_Fundamentals_CleanCode.Core.Enums;
+﻿using CSharp_Fundamentals_CleanCode.Application.TaskManagement;
+using CSharp_Fundamentals_CleanCode.Core.Enums;
 using CSharp_Fundamentals_CleanCode.Infrastructure.Services;
 namespace CSharp_Fundamentals_CleanCode.Presentation.ConsoleUI.Menu
 {
     public class MenuRenderer
     {
         private readonly InputService _input;
-        public MenuRenderer(InputService input)
+        private readonly List<TaskDefinition> _tasks;
+        public MenuRenderer(InputService input, List<TaskDefinition> tasks)
         {
             _input = input;
+            _tasks = tasks;
         }
         public MenuOption Show()
         {
@@ -38,11 +41,10 @@ namespace CSharp_Fundamentals_CleanCode.Presentation.ConsoleUI.Menu
         }
         private void PrintOptions()
         {
-            foreach (var option in Enum.GetValues<MenuOption>())
+            foreach (var task in _tasks)
             {
-                Console.WriteLine($"  [{(int)option}] {option}");
+                Console.WriteLine($"  [{(int)task.Option}] {task.DisplayName}");
             }
-
             Console.WriteLine("========================================");
         }
         private void PrintInvalid()

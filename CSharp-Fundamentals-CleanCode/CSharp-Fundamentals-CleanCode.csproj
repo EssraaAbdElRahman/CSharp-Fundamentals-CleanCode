@@ -8,10 +8,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Tasks\Loops\" />
-    <Folder Include="Tasks\Arrays\" />
-    <Folder Include="Tasks\Strings\" />
-  </ItemGroup>
-
 </Project>
