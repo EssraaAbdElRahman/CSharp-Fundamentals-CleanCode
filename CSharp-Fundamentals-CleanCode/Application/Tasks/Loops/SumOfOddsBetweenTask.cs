@@ -15,6 +15,12 @@ namespace CSharp_Fundamentals_CleanCode.Application.Tasks.Loops
             int start = input.ReadInt();
             int end = input.ReadInt();
             int sum = 0;
+            if (start > end)
+            {
+                int temp = start;
+                start = end;
+                end = temp;
+            }
             for (int i = start; i <= end; i++)
             {
                 if (i % 2 != 0)
