@@ -22,7 +22,7 @@ namespace CSharp_Fundamentals_CleanCode.Application.TaskManagement
                     "CheckNumberSign",
                     "Check Number Sign",
                     () => new CheckNumberSignTask(input, output)
-                ),             
+                ),
                 new TaskDefinition(
                         MenuOption.PrintEvenNumbers,
                         "PrintEvenNumbers",
@@ -46,6 +46,42 @@ namespace CSharp_Fundamentals_CleanCode.Application.TaskManagement
                         "SumOfEvenNumbers",
                         "Sum of Even Numbers",
                         () => new SumOfEvenNumbersTask(input, output)
+                    ),
+                    new TaskDefinition(
+                        MenuOption.DivisibleByThreeAndFiveTask,
+                        "DivisibleByThreeAndFiveTask",
+                        "Divisible by Three and Five",
+                        () => new DivisibleByThreeAndFiveTask(input, output)
+                      )
+                    ,new TaskDefinition(
+                        MenuOption.LeapYearTask,
+                        "LeapYearTask",
+                        "Check Leap Year",
+                        () => new LeapYearTask(input, output)
+                    ),
+                    new TaskDefinition(
+                        MenuOption.MaxOfThreeTask,
+                        "MaxOfThreeTask",
+                        "Find Maximum of Three Numbers",
+                        () => new MaxOfThreeTask(input, output)
+                    ),
+                    new TaskDefinition(
+                        MenuOption.ReverseNumberTask,
+                        "ReverseNumberTask",
+                        "Reverse a Number",
+                        () => new ReverseNumberTask(input, output)
+                    ),
+                    new TaskDefinition(
+                        MenuOption.MultiplicationTableTask,
+                        "MultiplicationTableTask",
+                        "Print Multiplication Table",
+                        () => new MultiplicationTableTask(input, output)
+                    ),
+                    new  TaskDefinition(
+                         MenuOption.SumOfOddsBetweenTask,
+                         "SumOfOddsBetweenTask",
+                         "Sum of Odd Numbers Between Two Numbers",
+                         () => new SumOfOddsBetweenTask(input, output)
                     )
             };
         }
